@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 First configuring linux for Mac\
+1. sudo apt update\
+2. sudo apt install openssh-server\
+3. sudo systemctl status ssh \'97> To find the status of the SSH Server\
+4. sudo systemctl start ssh. -> To start ssh server\
+5. sudo systemctl enable ssh \'97> To enable ssh server always\
+\
+\
+User\
+\
+1. sudo passwd root\
+2. su  \'97 super user/root user\
+3. To exit from root user exit\
+4. passwd \'97>to change the password\
+5. \
+\
+\
+\
+File System commands\
+1. pwd \'97 to know the current directory\
+2. cd/ cd ~ \'97 to get back to home directory\
+3. ls -F \'97To show list of file/directories\
+4. ls -a \'97 to show hidden files\
+5. ls -R \'97 to show all files inside directories\
+6. ls -l  \'97 to show permission\
+7. ls -l my_* \'97 wildcard character\
+8. ls -l my_file?_test. \'97 Finds file with names eg: my_file1_test, my_file2_test\
+9. touch \'97 creates a file\
+\
+\
+Links \'97 1.Symbolic link 2. Hard link\
+	\
+1. echo \'97 To write to a file\
+  echo \'93This is the example for Symbolic link\'94 > ~/file.txt\
+ echo \'93This is the example for Symbolic link\'94 >> ~/file.txt (>>) to append the content\
+2. cat --  to display content of the file\
+3. ln -s ~/file.txt ~/Documents/symlinkFile.txt.  \'97 To create a symbolic link\
+4. ln -sf ~/file2.txt ~/Documents/symlinkFile.txt \'97 To change the link\
+5. ln  ~/file.txt ~/Documents/hardlinkFile.txt \'97 To create Hard Link\
+\
+\
+Symbolic link creates a link for the documents but doesnt create a replica of it whereas Hard link uses the same file and even if we delete we will have another version of it\
+\
+\
+view file contents\
+1. cat \
+2. more - display contents based on screen size\
+3. less \
+4. head \
+5. tail\
+6. nl. \'97 to show line number\
+7. vi\
+\
+\
+Archiving\
+1. tar -cvf to compress\
+2. tar -xvf to un compress, eg: tar -xvf compression.tar -C target\
+3. tar -tvf to list the contents\
+4. tar -czvf tarfile.tar.gz  will compress and archive the folders togther\
+}
